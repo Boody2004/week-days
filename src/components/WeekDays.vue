@@ -6,50 +6,100 @@
             color="#e4e3e3">
             <v-toolbar-title id="toolbar">Week Days</v-toolbar-title>
                 <v-spacer></v-spacer>
-                
 <!--////////////////////////////////////icon///////////////////////////////////////////-->
 
             <div class="text-center">
 
-                <v-btn icon @click="ad">
-                    <v-icon>mdi-numeric-1-box-multiple-outline</v-icon>
-                </v-btn> 
-
-                <v-btn icon @click="add">
-                    <v-icon>mdi-numeric-2-box-multiple-outline</v-icon>
-                </v-btn> 
-
-                <v-btn icon @click="addd">
-                    <v-icon>mdi-numeric-3-box-multiple-outline</v-icon>
-                </v-btn> 
-
-                <v-btn icon @click="adddd">
-                    <v-icon>mdi-numeric-4-box-multiple-outline</v-icon>
-                </v-btn> 
-
-                <v-btn icon @click="addddd">
-                    <v-icon>mdi-numeric-5-box-multiple-outline</v-icon>
-                </v-btn> 
-
-                <v-btn icon @click="adddddd">
-                    <v-icon>mdi-numeric-6-box-multiple-outline</v-icon>
-                </v-btn> 
-
-                <v-btn icon @click="addddddd">
-                    <v-icon>mdi-numeric-7-box-multiple-outline</v-icon>
-                </v-btn> 
-
-                <v-btn icon @click="remove">
+                <v-btn color="pink" icon @click="remove">
                     <v-icon>mdi-minus-box</v-icon>
                 </v-btn>
 
             </div>
-
         </v-app-bar>
         <v-container>
             <v-row dense>
-
 <!--////////////////////////////////////v-col///////////////////////////////////////////-->
+                <v-col 
+                cols="12">
+
+                    <v-chip
+                        @click="addSaturday"
+                        class="ma-2"
+                        color="pink"
+                        label
+                        text-color="white"
+                    >
+                        <v-icon left>mdi-numeric-1-box-multiple-outline</v-icon>
+                            Saturday
+                    </v-chip>
+
+                    <v-chip
+                        @click="addSunday"
+                        class="ma-2"
+                        color="pink"
+                        label
+                        text-color="white"
+                    >
+                        <v-icon left>mdi-numeric-2-box-multiple-outline</v-icon>
+                            Sunday
+                    </v-chip>
+
+                    <v-chip
+                        @click="addMonday"
+                        class="ma-2"
+                        color="pink"
+                        label
+                        text-color="white"
+                    >
+                        <v-icon left>mdi-numeric-3-box-multiple-outline</v-icon>
+                            Monday
+                    </v-chip>
+
+                    <v-chip
+                        @click="addTuesday"
+                        class="ma-2"
+                        color="pink"
+                        label
+                        text-color="white"
+                    >
+                        <v-icon left>mdi-numeric-4-box-multiple-outline</v-icon>
+                            Tuesday
+                    </v-chip>
+
+                    <v-chip
+                        @click="addWednesday"
+                        class="ma-2"
+                        color="pink"
+                        label
+                        text-color="white"
+                    >
+                        <v-icon left>mdi-numeric-5-box-multiple-outline</v-icon>
+                            Wednesday
+                    </v-chip>
+
+                    <v-chip
+                        @click="addThursday"
+                        class="ma-2"
+                        color="pink"
+                        label
+                        text-color="white"
+                    >
+                        <v-icon left>mdi-numeric-6-box-multiple-outline</v-icon>
+                            Thursday
+                    </v-chip>
+
+                    <v-chip
+                        @click="addFriday"
+                        class="ma-2"
+                        color="pink"
+                        label
+                        text-color="white"
+                    >
+                        <v-icon left>mdi-numeric-7-box-multiple-outline</v-icon>
+                            Friday
+                    </v-chip>
+
+                </v-col>
 
                 <v-col
                 cols="12"
@@ -94,49 +144,49 @@
 <script>
     export default {
         methods: {
-            ad () {
+            addSaturday () {
                 this.items.push( {
             color: '#fbd46d',
             name: 'Saturday',
             weekend: 'weekend : yes',
         })
             }, 
-            add () {
+            addSunday () {
                 this.items.push( {
             color: '#84a9ac',
             name: 'Sunday',
             weekend: 'weekend : no',
         })
             },
-            addd () {
+            addMonday () {
                 this.items.push( {
             color: '#84a9ac',
             name: 'Monday',
             weekend: 'weekend : no',
         })
             },
-            adddd () {
+            addTuesday () {
                 this.items.push( {
             color: '#84a9ac',
             name: 'Tuesday',
             weekend: 'weekend : no',
         })
             },
-            addddd () {
+            addWednesday () {
                 this.items.push( {
             color: '#84a9ac',
             name: 'Wednesday',
             weekend: 'weekend : no',
         })
             },
-            adddddd () {
+            addThursday () {
                 this.items.push( {
             color: '#84a9ac',
             name: 'Thursday',
             weekend: 'weekend : no',
         })
             },
-            addddddd () {
+            addFriday () {
                 this.items.push( {
             color: '#fbd46d',
             name: 'Friday',
