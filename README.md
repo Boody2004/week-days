@@ -1,4 +1,4 @@
-# To Do List 📲
+# Week Days 📲
 ## go to website [week-days]( https://week-days.herokuapp.com/)
 <b>coded by [Boody-BE](https://github.com/Boody2004/week-days)</b>
 
