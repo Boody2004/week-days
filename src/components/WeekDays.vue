@@ -1,12 +1,13 @@
+<!--template-->
 <template>
     <div>
+        <!--app bar-->
         <v-app-bar
             dark
             flat
             color="#e4e3e3">
             <v-toolbar-title id="toolbar">Week Days</v-toolbar-title>
                 <v-spacer></v-spacer>
-<!--////////////////////////////////////icon///////////////////////////////////////////-->
 
             <div class="text-center">
 
@@ -16,9 +17,12 @@
 
             </div>
         </v-app-bar>
+        <!--end app bar-->
+        
         <v-container>
             <v-row dense>
-<!--////////////////////////////////////v-col///////////////////////////////////////////-->
+                
+                <!--col-->
                 <v-col 
                 cols="12">
 
@@ -98,9 +102,11 @@
                         <v-icon left>mdi-numeric-7-box-multiple-outline</v-icon>
                             Friday
                     </v-chip>
-
+                    
                 </v-col>
+                <!--end col-->
 
+                <!--col-->
                 <v-col
                 cols="12"
                 flat>
@@ -114,9 +120,9 @@
                         <v-card-actions></v-card-actions>
                     </v-card>
                 </v-col>
+                <!--end col-->
 
-<!--////////////////////////////////////v-col///////////////////////////////////////////-->
-
+                <!--col-->
                 <v-col
                     v-for="(item, i) in items"
                     :key="i"
@@ -136,11 +142,14 @@
                         </div>
                     </v-card>
                 </v-col>
+                <!--end col-->
             </v-row>
         </v-container>
     </div>
 </template>
-<!--////////////////////////////////////Script///////////////////////////////////////////-->
+<!--end template-->
+
+<!--script-->
 <script>
     export default {
         methods: {
@@ -240,7 +249,9 @@
     }),
     }
 </script>
-<!--////////////////////////////////////Style///////////////////////////////////////////-->
+<!--end script-->
+
+<!--style-->
 <style>
     #toolbar{
         font-size: 35px;
@@ -254,3 +265,4 @@
         background-image: linear-gradient(102deg,#84a9ac, #fbd46d, #385F73);
     }
 </style>
+<!--end style-->
